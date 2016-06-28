@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/btnStart"
+        android:onClick="sendIni"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnStop" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/btnStop"
+        android:onClick="SendCancel"
+        android:layout_below="@+id/btnStart"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(Value)"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/textView9"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(Value)"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(Value)"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(Value)"
+        android:id="@+id/textView5"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="V1:"
+        android:id="@+id/textView6"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/btnSave"
+        android:layout_alignStart="@+id/btnSave"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="V2:"
+        android:id="@+id/textView7"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView6"
+        android:layout_toStartOf="@+id/textView13"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="V3:"
+        android:id="@+id/textView8"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/btnSave"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="V4:"
+        android:id="@+id/textView9"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView8"
+        android:layout_toEndOf="@+id/checkBox"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="H:"
+        android:id="@+id/textView10"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/btnSave"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(Value)"
+        android:id="@+id/textView11"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignStart="@+id/textView13"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="P:"
+        android:id="@+id/textView12"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignStart="@+id/textView10"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(Value)"
+        android:id="@+id/textView13"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="C:"
+        android:id="@+id/textView14"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/btnSave"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(Value)"
+        android:id="@+id/textView15"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:onClick="saveFile"
+        android:visibility="invisible"
+        android:enabled="false"
+        android:layout_below="@+id/btnStop"
+        android:layout_alignStart="@+id/textView2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save to a file"
+        android:id="@+id/checkBox"
+        android:textColor="@android:color/background_light"
+        android:checked="false"
+        android:onClick="onClickCheckToSave"
+        android:buttonTint="@color/colorAccent"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Values"
+        android:id="@+id/checkBox2"
+        android:textColor="@android:color/background_light"
+        android:checked="false"
+        android:onClick="onClickShowValues"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/checkBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create marker"
+        android:id="@+id/checkBox3"
+        android:textColor="@android:color/background_light"
+        android:checked="false"
+        android:onClick="onClickMarket"
+        android:buttonTint="@color/colorAccent"
+        android:layout_below="@+id/checkBox"
+        android:layout_toStartOf="@+id/btnStop"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open"
+        android:id="@+id/btnMarket"
+        android:onClick="onClickbtn"
+        android:visibility="invisible"
+        android:enabled="false"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_alignEnd="@+id/checkBox" />
+
+</RelativeLayout>
